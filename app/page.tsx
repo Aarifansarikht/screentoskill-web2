@@ -21,8 +21,7 @@ export default function Home() {
       <div className="absolute top-0 right-[-15%] w-[45vw] h-[45vw] rounded-full bg-emerald-100/30 blur-[130px] -z-20 pointer-events-none" />
       <div className="absolute top-[25%] left-[-10%] w-[35vw] h-[35vw] rounded-full bg-indigo-50/45 blur-[110px] -z-20 pointer-events-none" />
       
-      {/* 1. Header Navigation Component */}
-      <Header />
+    
       
       {/* Main Container Content */}
       <main className="w-full relative">
@@ -63,8 +62,7 @@ export default function Home() {
         <DownloadApp />
       </main>
 
-      {/* 8. Responsive footer structure Component */}
-      <Footer />
+    
     </div>
   );
 }

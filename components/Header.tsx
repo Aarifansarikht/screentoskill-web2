@@ -115,7 +115,7 @@ export default function Header() {
             <Link
               href="https://drive.google.com/file/d/1vfOt_-MySyfuIOark4P9tWVzm1UaDGD2/view?usp=drive_link"
               target="_blank"
-              className="px-5 py-2 bg-[#22C55E] hover:bg-[#02bd78] text-white rounded-full text-xs font-bold shadow-sm shadow-[#22C55E]/20 hover:shadow-[#22C55E]/30 hover:-translate-y-0.5 transition-all text-center cursor-pointer"
+              className="px-5 py-2 bg-[#22C55E] hover:bg-[#02bd78] text-white rounded-full text-xs font-medium shadow-sm shadow-[#22C55E]/20 hover:shadow-[#22C55E]/30 hover:-translate-y-0.5 transition-all text-center cursor-pointer"
             >
               Download App
             </Link>
@@ -177,10 +177,10 @@ export default function Header() {
               <div className="my-auto py-8 flex flex-col space-y-5">
                 <button
                   onClick={() => handleSectionNavigation("#why-screentoskill")}
-                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-bold"
+                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-medium"
                 >
                   <span className="flex items-center space-x-3">
-                    <span className="text-[10px] font-mono font-bold text-[#22C55E]">
+                    <span className="text-[10px] font-mono font-medium text-[#22C55E]">
                       01 //
                     </span>
                     <span>Why ScreenToSkill</span>
@@ -191,10 +191,10 @@ export default function Header() {
 
                 <button
                   onClick={() => handleSectionNavigation("#how-it-works")}
-                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-bold"
+                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-medium"
                 >
                   <span className="flex items-center space-x-3">
-                    <span className="text-[10px] font-mono font-bold text-[#22C55E]">
+                    <span className="text-[10px] font-mono font-medium text-[#22C55E]">
                       02 //
                     </span>
                     <span>How It Works</span>
@@ -205,10 +205,10 @@ export default function Header() {
 
                 <button
                   onClick={() => handleSectionNavigation("#faqs")}
-                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-bold"
+                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-medium"
                 >
                   <span className="flex items-center space-x-3">
-                    <span className="text-[10px] font-mono font-bold text-[#22C55E]">
+                    <span className="text-[10px] font-mono font-medium text-[#22C55E]">
                       03 //
                     </span>
                     <span>FAQs</span>
@@ -220,10 +220,10 @@ export default function Header() {
                 <Link
                   href="/case-study"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-bold"
+                  className="group flex items-baseline justify-between py-1.5 border-b border-[#E5E7EB] text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-medium"
                 >
                   <span className="flex items-center space-x-3">
-                    <span className="text-[10px] font-mono font-bold text-[#22C55E]">
+                    <span className="text-[10px] font-mono font-medium text-[#22C55E]">
                       04 //
                     </span>
                     <span>Case Study</span>
@@ -234,10 +234,10 @@ export default function Header() {
 
                 <button
                   onClick={() => handleSectionNavigation("#download")}
-                  className="group flex items-baseline justify-between py-1.5 text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-bold"
+                  className="group flex items-baseline justify-between py-1.5 text-left text-slate-800 hover:text-[#22C55E] transition-all text-base sm:text-lg font-display font-medium"
                 >
                   <span className="flex items-center space-x-3">
-                    <span className="text-[10px] font-mono font-bold text-[#22C55E]">
+                    <span className="text-[10px] font-mono font-medium text-[#22C55E]">
                       05 //
                     </span>
                     <span>Download App</span>

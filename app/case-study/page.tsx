@@ -123,9 +123,6 @@ export default function CaseStudyPage() {
       <div className="absolute top-0 right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#22C55E]/5 blur-[130px] -z-20 pointer-events-none" />
       <div className="absolute top-[30%] left-[-15%] w-[45vw] h-[45vw] rounded-full bg-[#22C55E]/5 blur-[120px] -z-20 pointer-events-none" />
 
-      {/* Upper Navigation Header */}
-      <Header />
-
       <main className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back navigation button */}
         <div className="mb-8 text-left">
@@ -597,7 +594,6 @@ export default function CaseStudyPage() {
       </main>
 
       <DownloadApp />
-      <Footer />
     </div>
   );
 }

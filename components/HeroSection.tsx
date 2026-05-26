@@ -102,7 +102,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-1">
                 <a
                   href="#download"
-                  className="group relative w-full sm:w-auto px-6 py-3 bg-[#22C55E] hover:bg-[#02bd78] text-white rounded-xl text-xs sm:text-sm font-bold shadow-sm shadow-emerald-500/15 hover:shadow-emerald-500/25 transition-all text-center cursor-pointer flex items-center justify-center space-x-2 min-w-[200px]"
+                  className="group relative w-full sm:w-auto px-6 py-3 bg-[#22C55E] hover:bg-[#02bd78] text-white rounded-xl text-xs sm:text-sm font-medium shadow-sm shadow-emerald-500/15 hover:shadow-emerald-500/25 transition-all text-center cursor-pointer flex items-center justify-center space-x-2 min-w-[200px]"
                 >
                   <span>Download App Free</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
