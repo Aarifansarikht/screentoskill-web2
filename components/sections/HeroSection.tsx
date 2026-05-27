@@ -21,12 +21,12 @@ const MOCKUPS = [
 
 const STATS = [
   {
-    value: "100k+",
+    value: "20+",
     label: "Active Families",
     desc: "Nurturing high-performance study habits and reducing device dependencies daily.",
   },
   {
-    value: "5M+",
+    value: "1K+",
     label: "Correct MCQ Quests",
     desc: "Our comprehensive curriculum empowers core skill tracking dynamically.",
     green: true,
@@ -94,7 +94,7 @@ export default function HeroSection() {
                 <span className="text-amber-500 font-sans text-sm leading-none">
                   ★ ★ ★ ★ ★
                 </span>
-                <span>4.9 rating loved by 100k+ families</span>
+                <span>4.9 rating loved by 20+ families</span>
               </div>
             </div>
 

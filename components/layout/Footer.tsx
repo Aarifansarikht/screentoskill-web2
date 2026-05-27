@@ -61,7 +61,7 @@ export default function Footer() {
                 ))}
               </div>
               <span className="text-[12px] font-bold text-slate-400 dark:text-slate-500 tracking-wide font-mono">
-                4.9 <span className="text-slate-300 dark:text-slate-600 font-light mx-1">|</span> 256 Reviews
+                4.9 <span className="text-slate-300 dark:text-slate-600 font-light mx-1">|</span> 14 Reviews
               </span>
             </div>
 
