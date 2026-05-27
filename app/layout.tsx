@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
-// Suppress missing type declarations for global CSS side-effect import
 // @ts-ignore
 import './globals.css';
-import LenisProvider from '@/components/lenis-provider';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import LenisProvider from '@/components/providers/LenisProvider';
+import { ThemeProvider, ThemeNoFlashScript } from '@/components/providers/ThemeProvider';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,10 +19,9 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
-const BASE_URL = 'https://screentoskill.com'; // 🔁 Replace with your real domain
+const BASE_URL = 'https://screentoskill.com';
 
 export const metadata: Metadata = {
-  // ─── Core ───────────────────────────────────────────────────────────────────
   metadataBase: new URL(BASE_URL),
   title: {
     default: 'ScreenToSkill – Turn Screen Time Into Learning',
@@ -48,15 +47,11 @@ export const metadata: Metadata = {
   category: 'Education',
   applicationName: 'ScreenToSkill',
 
-  // ─── Canonical & Alternates ──────────────────────────────────────────────
   alternates: {
     canonical: '/',
-    languages: {
-      'en-US': '/en-US',
-    },
+    languages: { 'en-US': '/en-US' },
   },
 
-  // ─── Open Graph (Facebook, LinkedIn, WhatsApp, etc.) ─────────────────────
   openGraph: {
     type: 'website',
     url: BASE_URL,
@@ -66,7 +61,7 @@ export const metadata: Metadata = {
       'Kids earn screen time by completing fun educational quizzes. A smarter way to parent in the digital age.',
     images: [
       {
-        url: '/og-image.png', // 1200×630px recommended
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'ScreenToSkill – Screen Time in Exchange for Learning',
@@ -75,10 +70,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
   },
 
-  // ─── Twitter / X Card ────────────────────────────────────────────────────
   twitter: {
     card: 'summary_large_image',
-    site: '@screentoskill',   // 🔁 Replace with your real handle
+    site: '@screentoskill',
     creator: '@screentoskill',
     title: 'ScreenToSkill – Turn Screen Time Into Learning',
     description:
@@ -86,7 +80,6 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
 
-  // ─── Icons ───────────────────────────────────────────────────────────────
   icons: {
     icon: [
       {
@@ -96,14 +89,12 @@ export const metadata: Metadata = {
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
     ],
-    apple: '/apple-touch-icon.png', // 180×180px
+    apple: '/apple-touch-icon.png',
     shortcut: '/favicon.ico',
   },
 
-  // ─── Web App Manifest ─────────────────────────────────────────────────────
   manifest: '/site.webmanifest',
 
-  // ─── Robots ──────────────────────────────────────────────────────────────
   robots: {
     index: true,
     follow: true,
@@ -116,14 +107,11 @@ export const metadata: Metadata = {
     },
   },
 
-  // ─── Verification (add after setting up Search Console / Bing WMT) ───────
   verification: {
     google: 'YOUR_GOOGLE_SITE_VERIFICATION_TOKEN',
-
   },
 };
 
-// ─── JSON-LD Structured Data ──────────────────────────────────────────────────
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -155,7 +143,7 @@ const jsonLd = {
         height: 512,
       },
       sameAs: [
-        'https://twitter.com/screentoskill',   // 🔁 Update
+        'https://twitter.com/screentoskill',
         'https://www.instagram.com/screentoskill',
         'https://www.linkedin.com/company/screentoskill',
       ],
@@ -166,9 +154,8 @@ const jsonLd = {
       name: 'ScreenToSkill',
       operatingSystem: 'iOS, Android',
       applicationCategory: 'EducationApplication',
-   
       description:
-        'ScreenToSkill lets parents convert their children\'s screen time into skill-building educational quiz sessions.',
+        "ScreenToSkill lets parents convert their children's screen time into skill-building educational quiz sessions.",
     },
   ],
 };
@@ -181,37 +168,36 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        {/* JSON-LD Structured Data */}
+        <ThemeNoFlashScript />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* Preconnect for performance (Core Web Vitals = ranking factor) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#00D084" />
         <meta name="msapplication-TileColor" content="#00D084" />
 
-        {/* Mobile web app capable */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="ScreenToSkill" />
 
-        {/* Geo targeting (optional, update to your market) */}
         <meta name="geo.region" content="US" />
         <meta name="geo.placename" content="United States" />
       </head>
       <body
         suppressHydrationWarning
-        className="font-sans antialiased text-rendering-optimizeLegibility bg-slate-50 text-slate-800 selection:bg-emerald-100 selection:text-emerald-950"
+        className="font-sans antialiased text-rendering-optimizeLegibility bg-[var(--background)] text-[var(--foreground)] selection:bg-emerald-100 selection:text-emerald-950 dark:selection:bg-emerald-500/30 dark:selection:text-emerald-50"
       >
-        <Header/>
-        <LenisProvider>{children}</LenisProvider>
-        <Footer/>
+        <ThemeProvider>
+          <Header />
+          <LenisProvider>{children}</LenisProvider>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

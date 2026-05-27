@@ -1,24 +1,65 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  
+
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-float: float 6s ease-in-out infinite;
+
+  /* Brand tokens (stable across themes) */
+  --color-brand: #22C55E;
+  --color-brand-hover: #16a34a;
+}
+
+/* Light theme tokens (defaults) */
+:root {
+  --background: #f8fafc;          /* slate-50 */
+  --background-elevated: #ffffff;
+  --background-subtle: #fbfdfe;
+  --foreground: #0f172a;          /* slate-900 */
+  --foreground-muted: #64748b;    /* slate-500 */
+  --foreground-subtle: #94a3b8;   /* slate-400 */
+  --border: #e5e7eb;
+  --border-subtle: #f1f5f9;       /* slate-100 */
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+}
+
+/* Dark theme tokens */
+.dark {
+  --background: #0b1120;          /* near slate-950 */
+  --background-elevated: #0f172a; /* slate-900 */
+  --background-subtle: #111827;
+  --foreground: #f1f5f9;          /* slate-100 */
+  --foreground-muted: #94a3b8;    /* slate-400 */
+  --foreground-subtle: #64748b;   /* slate-500 */
+  --border: #1f2937;              /* slate-800 */
+  --border-subtle: #1e293b;       /* slate-800-ish */
+  --surface: #0f172a;             /* slate-900 */
+  --surface-muted: #111827;
+  color-scheme: dark;
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-10px); }
 }
 
-/* Base custom utility styles if any */
+/* Smooth theme transitions on color-sensitive properties */
+html {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Display font utility */
 .font-display {
   font-family: var(--font-display);
 }
-
