@@ -60,7 +60,7 @@ const SLIDES: CaseStudy[] = [
     observationTag: "Pediatric Observation",
     observationText:
       "Aarav now self-regulates his short YouTube sessions and engages with audio-matching games independently. Speech mimicry of animal and object sounds noticeably stronger over four weeks.",
-    image: "/childlearn.jpg",
+    image: "/images/reviews/aarav.jpg",
     metric: { label: "Tantrum drop", value: "−92%" },
   },
   {
@@ -80,7 +80,7 @@ const SLIDES: CaseStudy[] = [
     observationTag: "School Progress Note",
     observationText:
       "Spelling accuracy improved measurably within three weeks. Ananya self-initiates quiz sessions to unlock entertainment time, reducing evening parent-supervision conflicts to near zero.",
-    image: "/case2.jpg",
+    image: "/images/reviews/ananya.jpg",
     metric: { label: "Spelling accuracy", value: "+41%" },
   },
   {
@@ -100,7 +100,7 @@ const SLIDES: CaseStudy[] = [
     observationTag: "Academic Streak Log",
     observationText:
       "31-day consecutive streak across algebra and basic physics MCQs. Self-reported gaming intent dropped by 22% in favour of quiz-driven unlocks. Teacher-reported attention span up notably in math periods.",
-    image: "/childanalytics.jpg",
+    image: "/images/reviews/kabir.jpg",
     metric: { label: "Grade uplift", value: "+1 grade" },
   },
   {
@@ -120,7 +120,7 @@ const SLIDES: CaseStudy[] = [
     observationTag: "Independent Progress Tracking",
     observationText:
       "Reading-comprehension accuracy improved across four levels in six weeks. Diya voluntarily switched from passive reels to vocabulary quests to earn rewards — sustained behaviour change observed.",
-    image: "/kidscreen.jpg",
+    image: "/images/reviews/diya.jpg",
     metric: { label: "Reading uplift", value: "+38%" },
   },
 ];

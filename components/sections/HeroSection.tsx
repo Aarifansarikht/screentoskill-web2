@@ -135,7 +135,7 @@ export default function HeroSection() {
                   speed={700}
                   watchSlidesProgress
                   autoplay={{
-                    delay: 2800,
+                    delay: 2000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                   }}

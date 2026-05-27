@@ -79,7 +79,7 @@ export default function WhyScreenToSkill() {
 
               <div className="relative mt-6 sm:mt-10 flex justify-center w-full h-[260px] sm:h-[340px] overflow-hidden rounded-2xl">
                 <Image
-                  src="/kidlearn.png"
+                  src="/Mobile-App.webp"
                   alt="Focused child engaged in interactive learning"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -87,7 +87,7 @@ export default function WhyScreenToSkill() {
                   referrerPolicy="no-referrer"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/30 via-transparent to-transparent pointer-events-none" />
+             
               </div>
             </div>
           </div>
