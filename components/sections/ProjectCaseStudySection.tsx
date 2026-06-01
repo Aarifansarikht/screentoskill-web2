@@ -12,9 +12,9 @@ import { HighlightUnderline } from "@/components/ui/HighlightUnderline";
 import { buttonStyles } from "@/components/ui/Button";
 
 const STATS = [
-  { value: "72%", label: "Screen Shifted", emphasis: false },
-  { value: "94%", label: "Tantrum Drop", emphasis: false },
-  { value: "92%", label: "Speech Focus", emphasis: true },
+  { value: "72%", label: "Less Screen Time", emphasis: false },
+  { value: "94%", label: "Fewer Screen Tantrums", emphasis: false },
+  { value: "92%", label: "Better Learning Focus", emphasis: true },
 ];
 
 export default function ProjectCaseStudySection() {
@@ -29,48 +29,47 @@ export default function ProjectCaseStudySection() {
       <div className="absolute bottom-[10%] right-[-10%] w-[380px] h-[380px] rounded-full bg-[var(--color-brand)]/5 blur-[90px] pointer-events-none -z-10" />
 
       <Container>
-        <SectionHeading
-          className="mx-auto mb-10 sm:mb-14"
-          eyebrow={
-            <Badge
-              variant="brand"
-              icon={<Sparkles className="w-3.5 h-3.5 text-[var(--color-brand)] mr-1" />}
-            >
-              Accredited Evaluation Studies
-            </Badge>
-          }
-          title={
-            <>
-              Comprehensive <HighlightUnderline>Case Study Showcase</HighlightUnderline>
-            </>
-          }
-          description="Discover the rigorous data, early cognitive milestones, and behavioral framework that helped over 100,000+ tiny learners master self-regulation."
-        />
+       <SectionHeading
+  className="mx-auto mb-10 sm:mb-14"
+  eyebrow={
+    <Badge
+      variant="brand"
+      icon={<Sparkles className="w-3.5 h-3.5 text-[var(--color-brand)] mr-1" />}
+    >
+      Real Parent Results
+    </Badge>
+  }
+  title={
+    <>
+      See How <HighlightUnderline>ScreenToSkill Helps Kids Learn</HighlightUnderline>
+    </>
+  }
+  description="See how children spend less time on screens and more time learning through fun questions and challenges."
+/>
 
         <div className="bg-[#FAFCFC]/70 dark:bg-slate-900/40 border border-[var(--border)] rounded-2xl p-5 sm:p-8 lg:p-10 relative overflow-hidden shadow-xs hover:shadow-sm transition-shadow">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-7 text-left space-y-5">
-              <div className="inline-flex items-center space-x-2.5">
-                <span className="text-[10px] font-mono font-bold text-[var(--color-brand)] uppercase tracking-wider bg-emerald-50 dark:bg-emerald-500/10 px-2.5 py-0.5 rounded">
-                  Active Study • 100K+ Kids
-                </span>
-                <span className="text-[10px] text-slate-400 dark:text-slate-500 font-bold">•</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 font-bold font-mono uppercase tracking-wider">
-                  Toddlers & Preschool
-                </span>
-              </div>
+  <div className="inline-flex items-center space-x-2.5">
+  <span className="text-[10px] font-mono font-bold text-[var(--color-brand)] uppercase tracking-wider bg-emerald-50 dark:bg-emerald-500/10 px-2.5 py-0.5 rounded">
+    100,000+ Children
+  </span>
+  <span className="text-[10px] text-slate-400 dark:text-slate-500 font-bold">•</span>
+  <span className="text-[10px] text-slate-500 dark:text-slate-400 font-bold font-mono uppercase tracking-wider">
+    Ages 3-10 Years
+  </span>
+</div>
 
-              <h3 className="text-xl sm:text-2xl font-display font-bold text-slate-900 dark:text-slate-50 leading-tight">
-                Evaluating the ScreenToSkill Cognitive Intercept
-              </h3>
 
-              <p className="text-[#5C6E7F] dark:text-slate-400 text-xs sm:text-sm font-normal leading-relaxed">
-                Rather than default, aggressive parental application shutdowns,
-                ScreenToSkill implements helpful cognitive friction. This case
-                study details the 12-week test window where idle screen-time was
-                transformed into preschool math, verbal, and shape accomplishments.
-              </p>
+             <h3 className="text-xl sm:text-2xl font-display font-bold text-slate-900 dark:text-slate-50 leading-tight">
+  Turning Screen Time Into Learning Time
+</h3>
 
+<p className="text-[#5C6E7F] dark:text-slate-400 text-xs sm:text-sm font-normal leading-relaxed">
+  Instead of simply blocking apps, ScreenToSkill asks children fun learning
+  questions before they can continue using YouTube, games, or other apps.
+  This helps children learn new things while reducing unnecessary screen time.
+</p>
               <div className="grid grid-cols-3 gap-4 pt-1">
                 {STATS.map((s, i) => (
                   <div
@@ -118,7 +117,7 @@ export default function ProjectCaseStudySection() {
                 <div className="absolute top-3 right-3 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md py-1 px-2.5 rounded border border-[var(--border)] flex items-center space-x-1.5 shadow-2xs select-none">
                   <Award className="w-3.5 h-3.5 text-[var(--color-brand)]" />
                   <span className="text-[9px] font-bold text-slate-800 dark:text-slate-100">
-                    Accredited Pilot
+                    Parent Approved
                   </span>
                 </div>
               </div>
