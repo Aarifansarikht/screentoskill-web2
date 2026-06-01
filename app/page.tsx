@@ -11,6 +11,7 @@ import FutureVision from "@/components/sections/FutureVision";
 import MandatoryPermissions from "@/components/sections/MandatoryPermissions";
 import FAQs from "@/components/sections/FAQs";
 import DownloadApp from "@/components/sections/DownloadApp";
+import SetupInstall from "@/components/sections/SetupInstall";
 
 export default function Home() {
   return (
@@ -26,10 +27,11 @@ export default function Home() {
         <BrainDevelopmentImpact />
         <BeforeAfter />
         <HowItWorks />
+        <MandatoryPermissions />
+        <SetupInstall/>
         <ParentAnalytics />
         <ProjectCaseStudySection />
         <FutureVision />
-        <MandatoryPermissions />
         <FAQs />
         <DownloadApp />
       </main>
