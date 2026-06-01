@@ -21,8 +21,8 @@ type Feature = {
 const FEATURES: Feature[] = [
   {
     icon: <GraduationCap className="w-5.5 h-5.5 stroke-[2]" />,
-    title: "Reliability Parents Trust",
-    desc: "Your peace of mind and child safety online are our absolute top priorities. Grade-specific locks activate instantly.",
+    title: "Trusted by Parents",
+    desc: "Parents stay in control while children learn. Screen time is used for learning activities instead of endless scrolling and videos.",
     accent: "#553CFA",
     accentHover: "#553CFA",
     iconBg: "bg-[#EBE9FE] dark:bg-violet-500/15",
@@ -31,8 +31,8 @@ const FEATURES: Feature[] = [
   },
   {
     icon: <Lock className="w-5 h-5 stroke-[2]" />,
-    title: "Outstanding Pedagogy Blocks",
-    desc: "Commitment to high-performance learning values doesn't end with dry quizzes. Engage children in core skill games.",
+    title: "Learning Through Fun Challenges",
+    desc: "Kids solve quizzes, puzzles, and learning games to earn rewards. Education feels fun, engaging, and motivating.",
     accent: "#0284C7",
     accentHover: "#0284C7",
     iconBg: "bg-[#E0F2FE] dark:bg-sky-500/15",
@@ -41,8 +41,8 @@ const FEATURES: Feature[] = [
   },
   {
     icon: <BarChart3 className="w-5 h-5 stroke-[2]" />,
-    title: "Customized to Grade Milestone",
-    desc: "Select exactly from Mathematics, elementary Science, grammar and logic puzzles matching school levels dynamically.",
+    title: "Perfect for Every Grade",
+    desc: "Content is matched to your child's age and school level, covering Maths, English, Science, History, and logical thinking.",
     accent: "#0D9488",
     accentHover: "#0D9488",
     iconBg: "bg-[#E2F7F2] dark:bg-teal-500/15",
@@ -71,15 +71,15 @@ export default function WhyScreenToSkill() {
                   ScreenToSkill?
                 </h2>
                 <p className="text-xs sm:text-sm text-[#1F5441]/85 dark:text-emerald-200/80 leading-relaxed font-normal">
-                  We&apos;re your dedicated partner in converting idle
-                  screen-time into valuable, parent-approved skill building
-                  sessions.
+                   ScreenToSkill helps children turn screen time into productive learning.
+  Through quizzes, challenges, and rewards, kids build real skills while
+  parents stay worry-free.
                 </p>
               </div>
 
               <div className="relative mt-6 sm:mt-10 flex justify-center w-full h-[260px] sm:h-[340px] overflow-hidden rounded-2xl">
                 <Image
-                  src="/Mobile-App.webp"
+                  src="/whyus.png"
                   alt="Focused child engaged in interactive learning"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
