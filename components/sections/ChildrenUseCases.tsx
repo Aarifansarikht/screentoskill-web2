@@ -88,7 +88,9 @@ const matureGroups: MilestoneDetail[] = [
       "Children answer MCQs covering multiplication, division and fractions, English grammar and reading questions, school-level science topics, and basic history facts at middle-school difficulty.",
     specs: ["Math (Grade 4–7)", "English grammar", "Science & History MCQs"],
     imageUrl: "/images/agegroup/twelveyear.png",
-    icon: <BrainCircuit className="w-4 h-4 text-slate-600 dark:text-slate-400" />,
+    icon: (
+      <BrainCircuit className="w-4 h-4 text-slate-600 dark:text-slate-400" />
+    ),
   },
   {
     index: "[05]",
@@ -100,13 +102,25 @@ const matureGroups: MilestoneDetail[] = [
       "High-school MCQs across algebra, English comprehension, advanced science and history.",
     questsDescription:
       "Teens answer harder MCQs covering algebra and word problems, English comprehension and grammar, secondary-school science across physics, chemistry and biology, plus history concepts at exam-prep difficulty.",
-    specs: ["Algebra & word problems", "English comprehension", "Science & History MCQs"],
-    imageUrl: "/images/agegroup/thirteenplus.jpeg",
-    icon: <GraduationCap className="w-4 h-4 text-slate-600 dark:text-slate-400" />,
+    specs: [
+      "Algebra & word problems",
+      "English comprehension",
+      "Science & History MCQs",
+    ],
+    imageUrl: "/images/agegroup/thirteenplus.png",
+    icon: (
+      <GraduationCap className="w-4 h-4 text-slate-600 dark:text-slate-400" />
+    ),
   },
 ];
 
-function MilestoneCard({ group, sizes }: { group: MilestoneDetail; sizes: string }) {
+function MilestoneCard({
+  group,
+  sizes,
+}: {
+  group: MilestoneDetail;
+  sizes: string;
+}) {
   return (
     <div className="group relative bg-[var(--surface)] border border-[var(--border)] hover:border-slate-200/60 dark:hover:border-slate-700 rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col overflow-hidden">
       <div className="relative w-full h-[200px] sm:h-[260px] lg:h-[350px] overflow-hidden bg-slate-50 dark:bg-slate-800 rounded-t-xl border-b border-[var(--border)]">
@@ -180,7 +194,12 @@ function MilestoneCard({ group, sizes }: { group: MilestoneDetail; sizes: string
 
 export default function ChildrenUseCases() {
   return (
-    <Section id="age-adapted" tone="subtle" bordered className="bg-[#FBFDFE] dark:bg-slate-950/40">
+    <Section
+      id="age-adapted"
+      tone="subtle"
+      bordered
+      className="bg-[#FBFDFE] dark:bg-slate-950/40"
+    >
       <div className="absolute top-[8%] right-[-10%] w-[380px] h-[380px] bg-gradient-to-br from-indigo-50/45 to-amber-50/20 dark:from-indigo-500/5 dark:to-amber-500/5 rounded-full blur-[100px] pointer-events-none -z-10" />
       <div className="absolute bottom-[10%] left-[-10%] w-[420px] h-[420px] bg-slate-50/50 dark:bg-slate-800/30 rounded-full blur-[110px] pointer-events-none -z-10" />
 
@@ -194,11 +213,11 @@ export default function ChildrenUseCases() {
           }
           title={
             <>
-              Tailored Cognitive Quests for{" "}
+              Tailored Learning Challenges for{" "}
               <HighlightUnderline>Every Age Group</HighlightUnderline>
             </>
           }
-          description="ScreenToSkill automatically adapts challenge difficulties—ranging from sensory auditory play for pre-school toddlers to high-level science, grammar, and algebraic reasoning for teens."
+          description="ScreenToSkill automatically gives age-appropriate learning challenges—from simple sounds and fun activities for young children to science, English, maths, and reasoning questions for teenagers."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 items-stretch">

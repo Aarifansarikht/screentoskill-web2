@@ -18,27 +18,27 @@ type Impact = {
 const IMPACTS: Impact[] = [
   {
     icon: <Brain className="w-5 h-5 text-indigo-500" />,
-    title: "Active Cognitive Engagement",
+    title: "Active Learning",
     description:
-      "Replaces passive dopamine-scrolling loops with active critical thinking problems. Promotes growth of synaptic density in the prefrontal cortex.",
-    stat: "+40%",
-    statLabel: "Focus Retention",
+      "Kids answer questions, identify images, and complete learning challenges instead of spending all their time on passive entertainment.",
+    stat: "100+",
+    statLabel: "Learning Activities",
   },
   {
     icon: <ShieldCheck className="w-5 h-5 text-[var(--color-brand)]" />,
-    title: "Healthy Dopamine Regulation",
+    title: "Balanced Screen Time",
     description:
-      "Delayed-gratification cycles reward accomplishments at set milestones, reducing screen dependence and irritability behaviors.",
-    stat: "-35%",
-    statLabel: "Screen Irritability",
+      "Entertainment time is unlocked through completed learning tasks, encouraging a healthy balance between fun and education.",
+    stat: "1 App",
+    statLabel: "Learn & Earn",
   },
   {
     icon: <Zap className="w-5 h-5 text-amber-500" />,
-    title: "Adaptive Learning Agility",
+    title: "Age-Based Challenges",
     description:
-      "Personalized neural-pacing paths adjust to correct errors on the fly. Concepts stick through multi-sensory association games.",
-    stat: "2.5x",
-    statLabel: "Concept Mastery",
+      "Learning activities are tailored for different age groups, from simple image recognition for young children to advanced subjects for teens.",
+    stat: "3+",
+    statLabel: "Age Groups",
   },
 ];
 
@@ -52,18 +52,19 @@ export default function BrainDevelopmentImpact() {
           {/* Left Text Block */}
           <div className="lg:col-span-5 space-y-4 text-left">
             <Badge icon={<Activity className="w-3.5 h-3.5 text-indigo-500" />}>
-              Scientific Foundation
+              Learning Through Play
             </Badge>
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-slate-50 tracking-tight leading-tight">
-              A Healthy Path to{" "}
-              <HighlightUnderline>Digital Balance</HighlightUnderline>
+              Helping Kids Use Screen Time{" "}
+              <HighlightUnderline>Better</HighlightUnderline>
             </h2>
 
             <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed font-normal">
-              Passive video stream consumption stunts verbal memory growth.
-              ScreenToSkill reverses this effect by transforming screen sessions
-              into active mental exercises verified by neurodevelopment research.
+              ScreenToSkill turns screen time into a learning experience.
+              Children complete fun image-based quizzes and learning challenges
+              to earn their entertainment time, helping them build knowledge
+              while enjoying technology.
             </p>
 
             <div className="p-4 bg-slate-50 dark:bg-slate-800/40 border border-[var(--border)] rounded-xl space-y-1.5">
@@ -74,9 +75,9 @@ export default function BrainDevelopmentImpact() {
                 </span>
               </div>
               <p className="text-xs text-slate-600 dark:text-slate-400 font-normal leading-relaxed">
-                Just 20-30 minutes of interactive play replacement yields
-                significant improvements in task switching & cognitive focus
-                compared to passive cartoon streaming.
+                Children can complete short learning sessions every day at their
+                own pace. Regular participation helps create positive learning
+                habits and encourages productive screen use.
               </p>
             </div>
           </div>

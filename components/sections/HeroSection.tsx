@@ -14,9 +14,12 @@ const MOCKUPS = [
   { src: "/mobile1.png", alt: "ScreenToSkill Challenge Interface Mockup" },
   { src: "/mobile2.png", alt: "Parent App Lock Filters Screen" },
   { src: "/mobile3.png", alt: "Parental Analytics App Screenshot" },
-  { src: "/mobile1.png", alt: "ScreenToSkill Quiz Overlay" },
-  { src: "/mobile2.png", alt: "Parent Dashboard Lock Setup" },
-  { src: "/mobile3.png", alt: "Parental Analytics Insights" },
+  { src: "/images/casestudy/casestudy2.png", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy8.png", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy9.png", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy12.png", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy20.png", alt: "ScreenToSkill Quiz Overlay" },
+
 ];
 
 const STATS = [
@@ -157,7 +160,7 @@ export default function HeroSection() {
                       <div
                         className="relative overflow-hidden"
                         style={{
-                          width: "clamp(170px, 26vw, 230px)",
+                          width: "clamp(170px, 26vw, 225px)",
                           aspectRatio: "390/840",
                         }}
                       >

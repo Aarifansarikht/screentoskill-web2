@@ -69,7 +69,7 @@ export default function FutureVision() {
                     POSITIVE RELATIONSHIPS
                   </span>
                   <p className="text-slate-800 dark:text-slate-100 text-xs font-normal mt-1 leading-relaxed italic">
-                    &ldquo;My son no longer throws screen tantrums because
+                    &ldquo;My daughter no longer throws screen tantrums because
                     ScreenToSkill handles the locks as a game challenge. He
                     earns his game time honestly and feels proud about it!&rdquo;
                   </p>
