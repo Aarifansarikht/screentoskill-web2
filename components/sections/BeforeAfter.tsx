@@ -39,7 +39,7 @@ const BEFORE: Side = {
   eyebrow: { label: "DAILY FRICTION", tone: "text-rose-400" },
   headline: "Endless Dopamine Loops",
   image: {
-    src: "/images/braindevelop/brainrot.jpg",
+    src: "/images/braindevelop/brainrot.webp",
     alt: "Overstimulated child passive screen time",
   },
   points: [
@@ -72,7 +72,7 @@ const AFTER: Side = {
   eyebrow: { label: "SELF-REGULATION", tone: "text-emerald-300" },
   headline: "Focus Slots Earned Honestly",
   image: {
-    src: "/images/braindevelop/activechild.jpg",
+    src: "/images/braindevelop/activechild.webp",
     alt: "Cognitively engaged child learning happily",
   },
   points: [

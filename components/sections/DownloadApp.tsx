@@ -46,7 +46,7 @@ export default function DownloadApp() {
                   aria-label="Get it on Google Play"
                 >
                   <Image
-                    src="/playstoreicon.png"
+                    src="/playstoreicon.webp"
                     alt="Get it on Google Play"
                     width={180}
                     height={56}

@@ -11,14 +11,14 @@ import { Container } from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/Button";
 
 const MOCKUPS = [
-  { src: "/mobile1.png", alt: "ScreenToSkill Challenge Interface Mockup" },
-  { src: "/mobile2.png", alt: "Parent App Lock Filters Screen" },
-  { src: "/mobile3.png", alt: "Parental Analytics App Screenshot" },
-  { src: "/images/casestudy/casestudy2.png", alt: "ScreenToSkill Quiz Overlay" },
-  { src: "/images/casestudy/casestudy8.png", alt: "ScreenToSkill Quiz Overlay" },
-  { src: "/images/casestudy/casestudy9.png", alt: "ScreenToSkill Quiz Overlay" },
-  { src: "/images/casestudy/casestudy12.png", alt: "ScreenToSkill Quiz Overlay" },
-  { src: "/images/casestudy/casestudy20.png", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy13.webp", alt: "ScreenToSkill Challenge Interface Mockup" },
+  { src: "/images/casestudy/casestudy18.webp", alt: "Parent App Lock Filters Screen" },
+  { src: "/images/casestudy/casestudy19.webp", alt: "Parental Analytics App Screenshot" },
+  { src: "/images/casestudy/casestudy2.webp", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy8.webp", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy9.webp", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy12.webp", alt: "ScreenToSkill Quiz Overlay" },
+  { src: "/images/casestudy/casestudy20.webp", alt: "ScreenToSkill Quiz Overlay" },
 
 ];
 

@@ -66,35 +66,35 @@ export default function CaseStudyPage() {
 
   // Screenshots slider dataset
   const screenshotSlides = [
-    { image: "/images/casestudy/casestudy1.png", tag: "STEP 1: SECURE LOCKS" },
+    { image: "/images/casestudy/casestudy1.webp", tag: "STEP 1: SECURE LOCKS" },
     {
-      image: "/images/casestudy/casestudy2.png",
+      image: "/images/casestudy/casestudy2.webp",
       tag: "STEP 2: GENTLE BARRIER",
     },
     {
-      image: "/images/casestudy/casestudy3.png",
+      image: "/images/casestudy/casestudy3.webp",
       tag: "STEP 3: SENSORY PUZZLE",
     },
     {
-      image: "/images/casestudy/casestudy4.png",
+      image: "/images/casestudy/casestudy4.webp",
       tag: "STEP 4: UNLOCKED SUCCESS",
     },
-    // { image: "/images/casestudy/casestudy5.png", tag: "STEP 5: VISUAL CHARTS" },
-    { image: "/images/casestudy/casestudy6.png", tag: "STEP 6: PROGRESS VIEW" },
-    { image: "/images/casestudy/casestudy7.png", tag: "STEP 7: MILESTONES" },
-    { image: "/images/casestudy/casestudy8.png", tag: "STEP 8: REWARDS" },
-    { image: "/images/casestudy/casestudy9.png", tag: "STEP 9: STREAKS" },
-    { image: "/images/casestudy/casestudy10.png", tag: "STEP 10: ANALYTICS" },
-    { image: "/images/casestudy/casestudy11.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy12.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy13.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy14.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy15.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy16.png", tag: "STEP 11: DASHBOARD" },
-    // { image: "/images/casestudy/casestudy17.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy18.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy19.png", tag: "STEP 11: DASHBOARD" },
-    { image: "/images/casestudy/casestudy20.png", tag: "STEP 11: DASHBOARD" },
+    // { image: "/images/casestudy/casestudy5.webp", tag: "STEP 5: VISUAL CHARTS" },
+    { image: "/images/casestudy/casestudy6.webp", tag: "STEP 6: PROGRESS VIEW" },
+    { image: "/images/casestudy/casestudy7.webp", tag: "STEP 7: MILESTONES" },
+    { image: "/images/casestudy/casestudy8.webp", tag: "STEP 8: REWARDS" },
+    { image: "/images/casestudy/casestudy9.webp", tag: "STEP 9: STREAKS" },
+    { image: "/images/casestudy/casestudy10.webp", tag: "STEP 10: ANALYTICS" },
+    { image: "/images/casestudy/casestudy11.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy12.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy13.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy14.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy15.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy16.webp", tag: "STEP 11: DASHBOARD" },
+    // { image: "/images/casestudy/casestudy17.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy18.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy19.webp", tag: "STEP 11: DASHBOARD" },
+    { image: "/images/casestudy/casestudy20.webp", tag: "STEP 11: DASHBOARD" },
   ];
 
   return (
@@ -184,7 +184,7 @@ export default function CaseStudyPage() {
             <div className="lg:col-span-5 flex">
               <div className="relative w-full h-[400px] lg:h-[480px] rounded-3xl overflow-hidden border border-[var(--border)] shadow-xs group bg-white">
                 <Image
-                  src="/childlearn.jpg"
+                  src="/childlearn.webp"
                   alt="Mother and cute preschool child daughter learning with screen overlay together"
                   fill
                   className="object-cover group-hover:scale-102 transition-transform duration-500"
@@ -262,7 +262,7 @@ export default function CaseStudyPage() {
               <div className="relative w-full rounded-2xl overflow-hidden border border-[var(--border)]  bg-white p-5 flex flex-col justify-between min-h-[440px]">
                 <div className="relative w-full h-full rounded-xl overflow-hidden">
                   <Image
-                    src="/kidlearn.png"
+                    src="/kidlearn.webp"
                     alt="Active early childhood learning blocks"
                     fill
                     className="object-cover animate-fade-in hover:scale-103 transition-transform duration-500"
@@ -293,7 +293,7 @@ export default function CaseStudyPage() {
           <div className="lg:col-span-5">
             <div className="relative w-full h-[500px] rounded-3xl overflow-hidden border border-[var(--border)]  group">
               <Image
-                src="/childanalytics.jpg"
+                src="/childanalytics.webp"
                 alt="Parent and child reviewing progress analytics dashboard together"
                 fill
                 className="object-cover group-hover:scale-102 transition-transform duration-500"
@@ -425,7 +425,7 @@ export default function CaseStudyPage() {
             <div className="lg:col-span-5 flex">
               <div className="relative w-full rounded-2xl overflow-hidden border border-[var(--border)]  h-[440px] lg:h-[500px] group bg-white">
                 <Image
-                  src="/kidscreen.jpg"
+                  src="/kidscreen.webp"
                   alt="Pre-school learner celebrating milestone victory"
                   fill
                   className="object-cover group-hover:scale-102 transition-transform duration-500"

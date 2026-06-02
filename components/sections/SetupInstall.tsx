@@ -51,7 +51,7 @@ export default function WatchSetup() {
                 {/* Thumbnail */}
                 <div className="relative w-full aspect-video">
                   <Image
-                    src="/images/thumbnail.png"
+                    src="/images/thumbnail.webp"
                     alt="App setup walkthrough video"
                     fill
                     sizes="(max-width: 1280px) 100vw, 1024px"
@@ -74,7 +74,7 @@ export default function WatchSetup() {
                       <span className="absolute -inset-6 rounded-full bg-[var(--color-brand)]/8 animate-ping [animation-duration:3.2s] [animation-delay:0.6s]" />
                       <button
                         aria-label="Play setup video"
-                        className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[var(--color-brand)] text-white flex items-center justify-center shadow-2xl shadow-emerald-500/50 group-hover:scale-110 group-hover:bg-emerald-500 transition-all duration-300"
+                        className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[var(--color-brand)] text-white flex items-center justify-center shadow-2xl shadow-emerald-500/50 group-hover:scale-110 group-hover:bg-emerald-500 transition-all duration-300 cursor-pointer"
                       >
                         <svg
                           viewBox="0 0 24 24"

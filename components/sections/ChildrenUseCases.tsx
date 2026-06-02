@@ -41,7 +41,7 @@ const earlyGroups: MilestoneDetail[] = [
       "Audio-guided phonetic play built for active toddlers. Zero reading required.",
     questsDescription:
       "Identify animal sounds, friendly sound-matching puzzles, and phone voice guidance triggers that stimulate auditory memory.",
-    imageUrl: "/images/agegroup/kidplaycolour.png",
+    imageUrl: "/images/agegroup/kidplaycolour.webp",
     specs: ["Audio-first play", "Tactile screen taps", "Voice prompt guides"],
     icon: <Volume2 className="w-4 h-4 text-slate-600 dark:text-slate-400" />,
   },
@@ -55,7 +55,7 @@ const earlyGroups: MilestoneDetail[] = [
       "Bright visual MCQs designed to build early recognition and choice-making.",
     questsDescription:
       "Children see vibrant shapes, colours and animal visuals, then pick the correct match from simple multiple-choice options.",
-    imageUrl: "/images/agegroup/fiveyearkid.png",
+    imageUrl: "/images/agegroup/fiveyearkid.webp",
     specs: ["Shape recognition", "Colour identification", "Animal visual MCQs"],
     icon: <Sparkles className="w-4 h-4 text-slate-600 dark:text-slate-400" />,
   },
@@ -72,7 +72,7 @@ const matureGroups: MilestoneDetail[] = [
       "Early-school MCQs across single-digit math, simple English words and basic science facts.",
     questsDescription:
       "Children pick the right answer from MCQs on simple addition and subtraction, basic English vocabulary and spelling, and introductory science questions tuned for early-school understanding.",
-    imageUrl: "/images/agegroup/eightyearkid.png",
+    imageUrl: "/images/agegroup/eightyearkid.webp",
     specs: ["Math (Grade 1–3)", "English vocabulary", "Basic science MCQs"],
     icon: <Gamepad2 className="w-4 h-4 text-slate-600 dark:text-slate-400" />,
   },
@@ -87,7 +87,7 @@ const matureGroups: MilestoneDetail[] = [
     questsDescription:
       "Children answer MCQs covering multiplication, division and fractions, English grammar and reading questions, school-level science topics, and basic history facts at middle-school difficulty.",
     specs: ["Math (Grade 4–7)", "English grammar", "Science & History MCQs"],
-    imageUrl: "/images/agegroup/twelveyear.png",
+    imageUrl: "/images/agegroup/twelveyear.webp",
     icon: (
       <BrainCircuit className="w-4 h-4 text-slate-600 dark:text-slate-400" />
     ),
@@ -107,7 +107,7 @@ const matureGroups: MilestoneDetail[] = [
       "English comprehension",
       "Science & History MCQs",
     ],
-    imageUrl: "/images/agegroup/thirteenplus.png",
+    imageUrl: "/images/agegroup/thirteenplus.webp",
     icon: (
       <GraduationCap className="w-4 h-4 text-slate-600 dark:text-slate-400" />
     ),

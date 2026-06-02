@@ -56,7 +56,7 @@ export default function FutureVision() {
 
               <div className="relative w-full h-[320px] sm:h-[400px] rounded-xl overflow-hidden">
                 <Image
-                  src="/case2.png"
+                  src="/case2.webp"
                   alt="Mother and daughter sharing a smile while viewing parent analytics on mobile"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

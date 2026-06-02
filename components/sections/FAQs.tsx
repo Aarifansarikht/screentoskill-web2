@@ -47,7 +47,7 @@ export default function FAQs() {
             <div className="relative w-full max-w-[280px] sm:max-w-[520px] aspect-[482/450] rounded-2xl overflow-hidden   group">
               {/* <div className="absolute inset-0 bg-[var(--color-brand)]/10 mix-blend-multiply transition-opacity group-hover:opacity-0" /> */}
               <Image
-                src="/Mobile-App-FAQ.png"
+                src="/Mobile-App-FAQ.webp"
                 alt="Frequently Asked Questions ScreenToSkill"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
