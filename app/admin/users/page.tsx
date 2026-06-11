@@ -38,7 +38,7 @@ export default function UsersPage() {
       const { data } = await supabase
         .from("users")
         .select("*")
-        .order("userId", { ascending: true });
+        .order("userId", { ascending: false });
       setUsers((data as User[]) ?? []);
       setLoading(false);
     }
