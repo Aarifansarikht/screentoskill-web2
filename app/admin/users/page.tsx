@@ -29,7 +29,7 @@ export default function UsersPage() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("userId");
-  const [sortDir, setSortDir] = useState<SortDir>("asc");
+  const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [page, setPage] = useState(1);
   const PER_PAGE = 10;
 
@@ -47,7 +47,7 @@ export default function UsersPage() {
 
   const toggleSort = (key: SortKey) => {
     if (sortKey === key) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
-    else { setSortKey(key); setSortDir("asc"); }
+    else { setSortKey(key); setSortDir("desc"); }
   };
 
   const filtered = useMemo(() => {
@@ -61,14 +61,16 @@ export default function UsersPage() {
     );
   }, [users, search]);
 
-  const sorted = useMemo(() => {
-    return [...filtered].sort((a, b) => {
-      const av = a[sortKey];
-      const bv = b[sortKey];
-      const cmp = av < bv ? -1 : av > bv ? 1 : 0;
-      return sortDir === "asc" ? cmp : -cmp;
-    });
-  }, [filtered, sortKey, sortDir]);
+const sorted = useMemo(() => {
+  return [...filtered].sort((a, b) => {
+    const av = a[sortKey];
+    const bv = b[sortKey];
+
+    const cmp = av < bv ? -1 : av > bv ? 1 : 0;
+
+    return sortDir === "asc" ? cmp : -cmp;
+  });
+}, [filtered, sortKey, sortDir]);
 
   const totalPages = Math.max(1, Math.ceil(sorted.length / PER_PAGE));
   const paginated = sorted.slice((page - 1) * PER_PAGE, page * PER_PAGE);
@@ -98,7 +100,7 @@ export default function UsersPage() {
 
   const SortIcon = ({ k }: { k: SortKey }) =>
     sortKey === k ? (
-      sortDir === "asc"
+      sortDir === "desc"
         ? <ChevronUp className="w-3.5 h-3.5" />
         : <ChevronDown className="w-3.5 h-3.5" />
     ) : (
